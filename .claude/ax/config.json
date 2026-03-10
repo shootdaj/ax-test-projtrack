@@ -21,9 +21,9 @@
     "stack": "node",
     "language_version": "20",
     "test_framework": "node:test",
-    "unit_command": "node --test test/unit/",
-    "integration_command": "node --test test/integration/",
-    "scenario_command": "node --test test/scenarios/",
+    "unit_command": "node --test 'test/unit/*.test.js'",
+    "integration_command": "node --test 'test/integration/*.test.js'",
+    "scenario_command": "node --test 'test/scenarios/*.test.js'",
     "docker_compose_file": null
   },
   "deployment": {
