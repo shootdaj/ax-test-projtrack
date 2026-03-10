@@ -37,7 +37,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run unit tests
-        run: node --test test/unit/
+        run: node --test 'test/unit/*.test.js'
 
   integration-tests:
     name: Integration Tests
@@ -52,7 +52,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run integration tests
-        run: node --test test/integration/
+        run: node --test 'test/integration/*.test.js'
 
   scenario-tests:
     name: Scenario Tests
@@ -67,4 +67,4 @@ jobs:
       - name: Install dependencies
         run: npm ci
       - name: Run scenario tests
-        run: node --test test/scenarios/
+        run: node --test 'test/scenarios/*.test.js'
