@@ -35,17 +35,21 @@ function request(method, path, body = null) {
 }
 
 describe('Scenario: Full Project Workflow', () => {
-  before((t, done) => {
-    store.resetStore();
-    server = app.listen(0, () => {
-      baseUrl = `http://127.0.0.1:${server.address().port}`;
-      done();
+  before(() => {
+    return new Promise((resolve) => {
+      store.resetStore();
+      server = app.listen(0, () => {
+        baseUrl = `http://127.0.0.1:${server.address().port}`;
+        resolve();
+      });
     });
   });
 
-  after((t, done) => {
-    if (server) server.close(done);
-    else done();
+  after(() => {
+    return new Promise((resolve) => {
+      if (server) server.close(resolve);
+      else resolve();
+    });
   });
 
   it('creates a project, adds tasks, moves them through statuses, and verifies dashboard', async () => {
