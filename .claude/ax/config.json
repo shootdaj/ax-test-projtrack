@@ -29,44 +29,60 @@
   "deployment": {
     "type": "web-app",
     "provider": "vercel",
-    "url": null
+    "url": "https://ax-test-projtrack.vercel.app"
   },
   "ci": {
     "provider": "github-actions",
     "workflow_file": ".github/workflows/ci.yml"
   },
-  "phases_completed": [
+  "phases_completed": [],
+  "milestone_history": [
     {
-      "phase": 1,
-      "title": "Core API — Projects & Tasks",
-      "started_at": "2026-03-10T12:05:00Z",
-      "completed_at": "2026-03-10T12:15:00Z"
-    },
-    {
-      "phase": 2,
-      "title": "Comments, Activity & Kanban Logic",
-      "started_at": "2026-03-10T12:16:00Z",
-      "completed_at": "2026-03-10T12:25:00Z"
-    },
-    {
-      "phase": 3,
-      "title": "Sprints, Dashboard & Search",
-      "started_at": "2026-03-10T12:26:00Z",
-      "completed_at": "2026-03-10T12:35:00Z"
-    },
-    {
-      "phase": 4,
-      "title": "Frontend — Kanban Board & UI",
-      "started_at": "2026-03-10T12:36:00Z",
-      "completed_at": "2026-03-10T12:50:00Z"
+      "version": "v1.0",
+      "project_name": "ax-test-projtrack",
+      "phases_completed": [
+        {
+          "phase": 1,
+          "title": "Core API — Projects & Tasks",
+          "started_at": "2026-03-10T12:05:00Z",
+          "completed_at": "2026-03-10T12:15:00Z"
+        },
+        {
+          "phase": 2,
+          "title": "Comments, Activity & Kanban Logic",
+          "started_at": "2026-03-10T12:16:00Z",
+          "completed_at": "2026-03-10T12:25:00Z"
+        },
+        {
+          "phase": 3,
+          "title": "Sprints, Dashboard & Search",
+          "started_at": "2026-03-10T12:26:00Z",
+          "completed_at": "2026-03-10T12:35:00Z"
+        },
+        {
+          "phase": 4,
+          "title": "Frontend — Kanban Board & UI",
+          "started_at": "2026-03-10T12:36:00Z",
+          "completed_at": "2026-03-10T12:50:00Z"
+        }
+      ],
+      "completed_at": "2026-03-10T12:55:00Z",
+      "deployment": {
+        "provider": "vercel",
+        "url": "https://ax-test-projtrack.vercel.app"
+      },
+      "test_results": {
+        "unit": { "passed": 60, "failed": 0 },
+        "integration": { "passed": 40, "failed": 0 },
+        "scenario": { "passed": 6, "failed": 0 }
+      }
     }
   ],
-  "milestone_history": [],
   "last_commands": {
     "init": "2026-03-10T12:00:00Z",
-    "phase": null,
-    "run": null,
-    "finish": null,
+    "phase": "2026-03-10T12:50:00Z",
+    "run": "2026-03-10T12:05:00Z",
+    "finish": "2026-03-10T12:55:00Z",
     "status": null
   }
 }
