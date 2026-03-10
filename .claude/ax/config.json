@@ -41,6 +41,12 @@
       "title": "Core API — Projects & Tasks",
       "started_at": "2026-03-10T12:05:00Z",
       "completed_at": "2026-03-10T12:15:00Z"
+    },
+    {
+      "phase": 2,
+      "title": "Comments, Activity & Kanban Logic",
+      "started_at": "2026-03-10T12:16:00Z",
+      "completed_at": "2026-03-10T12:25:00Z"
     }
   ],
   "milestone_history": [],
